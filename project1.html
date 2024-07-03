@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="project1.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Pacifico&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <!--<video src="0423.mp4" muted loop autoplay></video>-->
+        <div class="navbar">
+            <h1 href="#">Notosan</h1>
+            <div class="navbar2">
+                <a href="#">Community</a>
+                <a href="#">About</a>
+                <a href="#">Support</a>
+                <a href="#">Contact</a>
+                <a href="registerpage.html" id="nav-register">Register</a>
+                <div class="toggle-btn"><i class='bx bx-menu'></i></div>
+            </div>
+            <div class="navbar3">
+
+                <li><a href="#">Community</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Support</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="registerpage.html" id="nav-register3">Register</a></li>
+                
+            </div>
+        </div>
+        <div class="hero">
+            <div class="top-bar"><i class='bx bxs-bar-chart-alt-2'></i><p>Journay to new frontiers Journey to Noto Nature Park</p></div>
+        
+        <div  class="left-contains">
+            <h2>VISITE</h1>
+                <p>Always from the manic energy of Japan's famous metropolis lies the ancient hamlet of Nota. Surprising and captivating measure Nota is a region like no other Soarings peaks lakes and endless waterfalls. </p>
+                <button> Start your Journey <i class='bx bx-caret-right'></i></button>
+                
+            </div>
+        </div>
+        
+
+    </div>
+    <script>
+        const toggleBtn = document.querySelector('.toggle-btn');
+        const toggleBtnIcon = document.querySelector('.toggle-btn i');
+        const dropDownMenu = document.querySelector('.navbar3');
+        toggleBtn.onclick = function ()
+        {
+            dropDownMenu.classList.toggle('open')
+            const isOpen = dropDownMenu.classList.contains('open')
+            toggleBtnIcon.classList = isOpen
+            ? 'bx bx-x-circle'
+            : 'bx bx-menu'
+        }
+        
+    </script>
+    
+</body>
+</html>

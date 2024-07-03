@@ -1,0 +1,224 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+.main
+{
+    background:url(anime\ boy.jpg)no-repeat;
+    
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    
+
+}
+.main h2
+{
+    position: absolute;
+    font-size: 28px;
+    color: white;
+    
+    height: 100px;
+    width: 200px;
+    padding-top: 28px;
+    text-align: center;
+    top: 0;
+    left: 0;
+
+}
+.container
+{
+    
+    
+    height: 35rem;
+    width: 30rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid rgba(225, 225, 225, 0.2) 1px;
+    backdrop-filter: blur(10px);
+    
+}
+.container h1
+{
+    color: white;
+    position: relative;
+    bottom: 3rem;
+    text-align: center;
+    font-size: 40px;
+    font-family: "Merriweather", serif;
+    font-weight: 400;
+    font-style: normal;
+
+}
+/*      LABEL     */
+.user-name label
+{
+    
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 60px;
+    color: white;
+}
+.user-email label
+{
+   
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 60px;
+    color: white;
+}
+.user-password label
+{
+    
+    font-size: 16px;
+    display: inline-block;
+    width: 100%;
+    padding-left: 60px;
+    color: white;
+}
+.user-name label,.user-email label,.user-password label{
+    font-family: "Merriweather", serif;
+  
+  font-weight: 300;
+  font-style: bold;
+  
+}
+/*      INPUT     */
+.user-name input,.user-email  input,.user-password input
+{
+    background-color: transparent;
+    width: 25rem;
+    height: 3rem;
+    padding: 20px;
+    margin: 10px 0px;
+    margin-left: 40px;
+    border-radius: 20px;
+    
+    border: solid rgba(225, 225, 225, 0.2) 2px;
+    box-shadow: none;
+    outline: none;
+    
+
+    
+
+
+}
+
+.user-name i,.user-email  i,.user-password i
+{
+    position: absolute;
+    font-size: 20px;
+    color: white;
+   
+    
+    transform: translate(-35px,25px);
+    
+}
+.login-button
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+   
+    height: 6rem;
+}
+.login-button a{
+    text-decoration: none;
+    
+    padding-left: 2.5rem;
+    font-size: 18px;
+    color: white;
+    
+
+}
+.login-button a:hover
+{
+    text-decoration: underline;
+}
+.login-button  button
+{
+    
+    height: 45px;
+    margin: 0px 5rem;
+    border: none;
+    border-radius: 25px;
+
+    font-size: 19px;
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    outline: none;
+    margin-top: 30px;
+    font-family: "Platypi", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    
+
+}
+.login-button button:active
+{
+    transform: scale(1.1);
+}
+.social
+{
+    
+    display: flex;
+
+    
+    align-items: end;
+    justify-content: center;
+    gap: 40px;
+    font-size: 25px;
+    
+
+}
+.social i{
+    transform: translateY(30px);
+    color: white ;
+}
+@media (max-width:500px)
+{
+    .container
+    {
+        height: 30rem;
+        width: 20rem;
+        
+    }
+    .container h1 
+    {
+        font-size: 30px;
+        bottom: 2rem;
+    }
+    .user-name label,.user-email label,.user-password label
+    {
+        padding-left: 40px;
+        font-size: 12px;
+    }
+    .user-name input,.user-email  input,.user-password input 
+    {
+        width: 18rem;
+        height: 1.7rem;
+        margin: 2px 0px;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+    .user-name i,.user-email  i,.user-password i
+    {
+        transform: translate(-35px,15px); 
+        font-size: 16px;
+    }
+    .login-button button 
+    {
+        height: 40px;
+    }
+    
+}

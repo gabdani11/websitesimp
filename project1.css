@@ -1,0 +1,330 @@
+
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+.main
+{
+    height: 100vh;
+    background: url(anime\ boy.jpg)no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+/* TOP NAVBAR */
+.navbar
+{
+    
+    height: 10%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    
+
+}
+.navbar h1
+{
+    
+    padding: 28px;
+    color: white;
+    cursor: pointer;
+
+
+
+}
+.navbar .navbar2
+{
+    
+    display: flex;
+    height: 40%;
+    width: 60%;
+    align-items: center;
+    justify-content: space-evenly;
+    
+    
+}
+.navbar2 a
+{
+    color: white;
+    font-weight: 500;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: all 0.2s ease;
+}
+.navbar2 a:hover
+{
+    color: #9f5fcd;
+}
+#nav-register
+{
+    
+    height: 100%;
+    width: 110px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #DEDEDE;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+
+}
+#nav-register:hover
+{
+    background-color: #9f5fcd;
+    border: none;
+    color: white;
+}
+
+
+.toggle-btn i
+{
+    color:white;
+    
+    position: relative;
+    left:4rem;
+    font-size: 28px;
+    cursor: pointer;
+    transition:transform 0.3s ease;
+
+}
+.toggle-btn i:active
+{
+    transform: scale(1.5);
+}
+.navbar3
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+   
+    
+    position: absolute;
+    
+    background-color:rgba(62, 37, 80, 0.2);
+    backdrop-filter: blur(5px);
+    height: 250px;
+    width: 300px;
+    top :6rem;
+    right:3rem;
+    
+    border-radius: 10px;
+    transition: opacity 100ms ease;
+    
+   
+}
+.navbar3.open
+{
+    opacity: 1;
+}
+
+
+
+.navbar3 li 
+{
+    
+    text-decoration: none;
+    list-style-type: none;
+}
+.navbar3 li a{
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+#nav-register3
+{
+    background-color: #9f5fcd;
+    height: 2.5rem;
+    width: 18rem;
+    border-radius: 7px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+#nav-register2
+{
+    background-color: #9f5fcd;
+    height: 2.5rem;
+    width: 8rem;
+    border-radius: 7px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+/* CONTAIN */
+.hero
+{
+    
+    height: 90%;
+}
+.top-bar
+{
+    
+    height: 30%;
+    display: flex;
+    align-items: center;
+    padding-left: 45px;
+    gap:10px;
+    font-size: 20px;
+    font-family: "DM Serif Display", serif;
+    font-weight: 100;
+    font-style: normal;
+    color: #c7a3e0;
+    
+}
+.left-contains
+{
+    
+    height: 45%;
+    padding-left: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+.left-contains h2
+{
+    
+    font-size: 15rem;
+    height: 60%;
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    
+
+}
+.left-contains p
+{
+    
+    height: 17%;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    width: 40rem;
+    font-size: 16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    color: white;
+    padding-left: 10px;
+
+    
+    
+
+}
+.left-contains button
+{
+    height: 10%;
+    width: 18rem;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 600;
+    background-color: white;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+
+} 
+.left-contains button:hover
+{
+    transform: scale(1.05);
+}
+/*.main video{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    width: 100%;
+}*/
+/*RESPONSIVE*/
+@media (min-width:1400px)
+
+{
+    .navbar3
+    {
+        display: none;
+    }
+    
+    .toggle-btn i{
+        display: none;
+
+    }
+    
+}
+
+@media (max-width:1400px)
+{
+    
+    .navbar2 a,#nav-register
+    {
+        display: none;
+       
+    }
+    
+    
+    
+    
+
+}
+@media (max-width:1231px)
+{
+    .left-contains h2
+    {
+        font-size: 12rem;
+        
+    }
+    .left-contains p {
+        font-size: 14px;
+    }
+    .left-contains button{
+        width: 15rem;
+
+    }
+    .top-bar p {
+font-size: 16px;
+    }
+
+}
+@media (max-width:430px)
+{
+    .left-contains h2
+    {
+        font-size: 6rem;
+        
+    }
+    .left-contains p {
+        font-size: 13px;
+        width: 20rem;
+    }
+    .left-contains button{
+        width: 12rem;
+
+    }
+    .top-bar p {
+font-size: 13px;
+width: 10rem;
+font-weight: 600;
+    }
+    .top-bar
+    {
+        padding: 30px;
+    }
+    
+
+}
+
